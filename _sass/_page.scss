@@ -1,0 +1,96 @@
+.page {
+  margin: 60px 0;
+
+  .header {
+    h1 {
+      font-size: 80px;
+    }
+
+    h4 {
+      font-weight: 200;
+    }
+
+    .title-holder {
+      margin-left: 150px;
+    }
+  }
+
+  .body {
+    margin-top: 40px;
+
+    p {
+      padding-top: 10px;
+    }
+
+    ul {
+      list-style: inherit;
+      padding: 0 0 0 40px;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+  }
+
+  .body h1, .links h1 {
+    margin-top: 40px;
+    font-weight: 200;
+  }
+}
+
+
+//
+// Responsiveness
+//
+@media all and (max-width: 767px) {
+  .page {
+    margin: 30px 0;
+
+    .header {
+      h1 {
+        font-size: 60px;
+      }
+
+      h4 {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .page {
+    .header {
+      h1 {
+        font-size: 48px;
+      }
+
+      .icon-holder {
+        position: relative;
+        margin: 0 auto;
+      }
+
+      .title-holder {
+        margin-left: 10px;
+      }
+    }
+
+    .body h1, .links h1 {
+      font-size: 28px;
+    }
+
+    .body h1 {
+      margin-left: 10px;
+    }
+  }
+}
+
+
+body.print {
+  .page {
+    margin-top: 0;
+  }
+  .body {
+    font-size: inherit;
+  }
+}

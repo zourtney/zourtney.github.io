@@ -1,0 +1,341 @@
+.page.resume {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .print-friendly {
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+
+  a {
+    font-weight: $body-font-weight;   // match body text
+  }
+
+  .header {
+    h1 {
+      font-size: 45px;
+    }
+  }
+
+  .contact-links {
+    text-align: right;
+    padding: 12px 0;
+    font-size: 16px;
+
+    li {
+      padding: 10px 0;
+    }
+
+    .contact-link {
+      display: inline;
+      position: relative;
+    }
+    i {
+      position: absolute;
+      top: -5px;
+      color: $veryLightGreen;
+      font-size: 30px;
+    }
+    i.fa-phone {
+      left: -35px;
+    }
+    i.fa-envelope {
+      left: -40px;
+    }
+  }
+
+  .resume-section {
+    margin-bottom: 80px;
+    border-top: 1px solid $veryLightGreen;
+
+    & > h1 {
+      text-align: right;
+      font-size: 60px;
+      color: rgba($nearlyWhiteGreen, 0.6);
+      margin-top: -12px;
+      margin-bottom: 10px;
+      letter-spacing: 0;   // use normal spacing on these. Looks roomy.
+    }
+  }
+
+  .job {
+    margin-bottom: 120px;
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .company-title {
+      margin-bottom: 5px;
+
+      h1 {
+        font-size: 40px;
+        display: inline;
+      }
+
+      h2.company-subtitle {
+        font-size: 20px;
+        color: $veryLightGreen;
+        margin-left: 15px;
+        font-style: italic;
+        display: inline;
+      }
+
+      i.link {
+        font-size: 24px;
+        position: relative;
+        left: 15px;
+        bottom: 5px;
+        color: $veryLightGreen;
+        &:hover {
+          color: $mediumGreen;
+        }
+      }
+    }
+
+    .job-title {
+      display: inline;
+    }
+
+    .job-duration {
+      margin-left: 15px;
+      font-style: italic;
+      display: inline;
+    }
+
+    .subsection {
+      margin: 20px 0;
+
+      strong {
+        font-weight: $body-font-weight;  // silence these for now... (I'm getting overbold fatigue)
+      }
+    }
+
+    .subsection-title {
+      font-size: 10px;
+      font-weight: 200;
+      color: $veryLightGreen;
+      margin-bottom: -15px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .skills {
+      margin: 20px 0;
+      padding: 0;
+
+      ul {
+        padding-left: 0;
+        li {
+          background: lighten($nearlyWhiteGreen, 10);
+          border: 1px solid lighten($veryLightGreen, 10);
+          padding: 8px;
+        }
+      }
+    }
+
+    .accomplishment {
+      margin-top: 15px;
+      position: relative;
+      background: lighten($nearlyWhiteGreen, 10);
+      border: 1px solid lighten($veryLightGreen, 10);
+
+      p {
+        margin-left: 50px;
+      }
+
+      strong {
+        font-weight: $body-font-weight;  // silence these for now... (I'm getting overbold fatigue)
+      }
+
+      .accomplishment-title {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 20px;
+        background: $nearlyWhiteGreen;
+
+        span {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
+}
+
+
+
+body.print {
+  .page.resume {
+    max-width: 700px;
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 22px;  // about as big as I can go without spilling onto a second page...
+
+    .print-friendly {
+      display: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: $sans-serif-family;    // uniform serificity feels better on paper. Go sans.
+      letter-spacing: 0;
+    }
+
+    .header {
+      h1 {
+        font-size: 36px;
+        font-weight: $body-font-weight;
+        margin-top: 0;
+      }
+      h2 {
+        font-size: 22px;
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+    }
+
+    .contact-links {
+      margin-top: 2px;
+      padding-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      li {
+        padding: 0;
+        font-size: 12px;
+      }
+      i {
+        display: none;
+      }
+    }
+
+    .contact-link.phone {
+      font-weight: $body-bold-font-weight;
+    }
+
+    .body {
+      margin-top: 15px;
+    }
+
+    .resume-section {
+      margin-bottom: 30px;
+      & > h1 {
+        color: $veryLightGreen;
+        font-size: 32px;
+        margin-top: -8px;
+        margin-bottom: -8px;
+      }
+    }
+
+    .meet-me {
+      p {
+        padding: 0 140px 5px 40px;
+      }
+      p.secondary {
+        padding-bottom: 0;
+      }
+    }
+
+    .job {
+      margin-bottom: 35px;
+
+      .company-title {
+        display: inline;
+        margin-right: 10px;
+        h1 {
+          font-size: 18px;
+        }
+        h3 {
+          font-size: 16px;
+        }
+        a {
+          display: none;
+        }
+      }
+      .company-subtitle {
+        display: none;
+      }
+      .job-title {
+        float: left;
+        margin: 0;
+        font-size: 18px;
+        font-weight: normal;
+        &:after {
+          content: "at";
+          font-size: 14px;
+          font-weight: 100;
+          margin: 0 12px;
+        }
+      }
+      .job-duration {
+        display: inline;
+        font-size: 16px;
+        font-weight: $body-font-weight;
+      }
+      .subsection {
+        margin: 8px 0;
+        p {
+          padding-top: 0;
+        }
+        li {
+          margin: -2px 0;
+        }
+      }
+      .subsection-title {
+        color: black;
+        display: inline;
+        font-style: normal;
+        border-bottom: 1px solid $veryLightGreen;
+      }
+      .subsection.synopsis .subsection-title,
+      .subsection.accomplishments .subsection-title {
+        display: none;
+      }
+      .skills {
+        margin: 2px 0;
+        font-size: 11px;
+        font-style: italic;
+        ul {
+          display: inline;
+          padding: 0;
+          margin-left: 10px;
+          li {
+            background: none;
+            padding: 0 8px;
+            border: none;
+          }
+        }
+      }
+    }
+    .education {
+      margin-bottom: 0;
+    }
+  }
+
+  #viewplus .subsection.accomplishments,
+  #alliance .subsection.accomplishments {
+    display: none;
+  }
+
+  #oit {
+    margin-bottom: 0;
+    .subsection.skills,
+    .subsection.synopsis {
+      display: none;
+    }
+  }
+}
+
+
+@media print {
+  body.print {
+    .page.resume {
+      margin-top: 0;   // take out top margin to maximize content space
+      margin-bottom: 0;
+    }
+    .job-duration {
+      display: inline !important;   // reverts to block display during printing for some reason...
+    }
+  }
+}

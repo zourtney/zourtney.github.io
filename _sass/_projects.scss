@@ -1,0 +1,106 @@
+.projects {
+  margin: 60px 0;
+
+  h1 {
+    padding: 0 15px;
+  }
+}
+
+.project {
+  margin-top: -15px;   // kind of a silly. I just like the explicit `margin: 60px 0` on the parent div for consistency with `.page`
+  padding-top: 15px;
+  padding-bottom: 40px;
+  border-left: 1px solid $veryLightGreen;
+  height: 425px;   // static height so the lines go to the bottom (full-height gimphack)
+
+  .header {
+    display: block;
+    height: 95px;
+    color: $darkGreen;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  .title-holder {
+    padding: 15px 0 0 100px;
+
+    h4 {
+      display: inline-block;
+      font-size: 32px;
+      white-space: nowrap;
+    }
+  }
+
+  .app-link {
+    padding-left: 10px;
+    font-size: 24px;
+    color: $lightGreen;
+  }
+
+  .header:hover .app-link {
+    padding-left: 15px;
+    transition: all 0.1s ease;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+.project:first-child {
+  border-left: none;
+}
+
+.project:hover {
+  background: rgba($veryLightGreen, 0.05);
+}
+
+
+//
+// Responsiveness
+//
+@media all and (max-width: 1199px) and (min-width: 992px) {
+  .project {
+    .title-holder {
+      padding-left: 95px;
+    }
+
+    .app-link {
+      padding-left: 5px;
+    }
+
+    .header:hover .app-link {
+      padding-left: 8px;
+    }
+  }
+}
+
+@media all and (max-width: 991px) and (min-width: 768px) {
+  .project:last-child {
+    border: none;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .project {
+    border: none;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+
+  .project {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  p, .links {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

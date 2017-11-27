@@ -1,0 +1,19 @@
+<nav>
+  <div class="container">
+    <div class="banner pull-left">
+      <a href="{{ site.baseurl }}/">
+        <div class="branding">
+          <h1>fullcourt</h1>
+          <h3>development</h3>
+        </div>
+      </a>
+    </div>
+    <ul class="nav navbar-nav pull-right hidden-xs">
+      {% for my_page in site.pages %}
+        {% if my_page.show_in_nav %}
+        <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>>
+  </div>
+</nav>

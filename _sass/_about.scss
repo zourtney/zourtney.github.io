@@ -1,0 +1,36 @@
+.page.about {
+  .timeline {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .event-date {
+    font-style: italic;
+  }
+
+  .event-span {
+    stroke: $lightGreen;
+    stroke-width: 5px;
+  }
+
+  .time-axis {
+    stroke: black;
+  }
+
+  .event-bubble {
+    fill: $nearlyWhiteGreen;
+    stroke: $mediumGreen;
+    filter: url(#dropshadow);
+  }
+
+  .event-bubble-desc {
+    fill: lighten($nearlyWhiteGreen, 10);
+    stroke: $veryLightGreen;
+    filter: url(#dropshadow);
+  }
+
+  .event-bubble-desc, .event-title, .event-date {
+    cursor: pointer;
+  }
+}

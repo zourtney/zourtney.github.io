@@ -102,12 +102,12 @@ Hover over the bubbles on the timeline. Click on the popups for details from [my
   </g>
 
   <!-- Interactive Ticketing -->
-  <use xlink:href="#event-bubble" x="650" y="150" class="event-keyframe nant" />
-  <g class="event-desc-holder nant" data-url="/resume/#nanthealth">
-    <use xlink:href="#event-desc" x="650" y="150" class="nant" />
-    <text x="595" y="80" class="event-date">Aug 2014</text>
-    <text x="595" y="105" class="event-title">Started SPA overhauls, Interactive Ticketing</text>
-    <polyline points="650,150 850,150" class="event-span" />
+  <use xlink:href="#event-bubble" x="850" y="150" class="event-keyframe nant" />
+  <g class="event-desc-holder its" data-url="/resume/#its">
+    <use xlink:href="#event-desc" x="850" y="150" class="its" />
+    <text x="795" y="80" class="event-date">Aug 2014</text>
+    <text x="795" y="105" class="event-title">Started SPA overhauls, Interactive Ticketing</text>
+    <polyline points="850,150 950,150" class="event-span" />
   </g>
 </svg>
 
