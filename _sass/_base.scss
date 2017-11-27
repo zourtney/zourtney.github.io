@@ -5,6 +5,10 @@
 //   padding: 0.2em 0;
 // }
 
+* {
+  box-sizing: border-box;
+}
+
 /**
  * Reset some basic elements
  */
@@ -23,10 +27,16 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $serif-family;
   font-weight: normal;
+  line-height: 1.1;
 }
 
 h1 {
   letter-spacing: -1.5px;   // large headings look better compacted a little
+}
+
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 strong {

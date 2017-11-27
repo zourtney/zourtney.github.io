@@ -1,17 +1,6 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
+<footer>
+  <div class="container">
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
           {% if site.github_username %}
@@ -41,15 +30,21 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>Software development is my passion. Learn more about me via the
-        social media links above. Or better yet, do it the old-fashioned way by
-        sending your thoughtful thoughts to
-        <a href="mailto:zourtney@gmail.com">zourtney@gmail.com</a>. I promise to
-        respond in kind.</p>
-        <p>Designed and developed by Courtney Christensen, 2013 - {{ site.time | date: '%Y' }}</p>
+        <p>
+          Software development is my passion. Learn more about me via the
+          social media links above. Or better yet, do it the old-fashioned way
+          by sending your thoughtful thoughts to
+          <a href="mailto:zourtney@gmail.com">zourtney@gmail.com</a>. I promise
+          to respond in kind.
+        </p>
+
+        <p class="designed-by">
+          <small>
+            Designed and developed by Courtney Christensen, 2013 -
+            {{ site.time | date: '%Y' }}
+          </small>
+        </p>
       </div>
     </div>
-
   </div>
-
 </footer>
